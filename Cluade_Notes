@@ -1,2 +1,22 @@
 What is Agentic Coding Tool..?
 Agentic Coding Tool that reads your codebase, edits files, runs commands, and integrates with your development tools.
+
+What is Code Harness..?
+Code Harness is the surrounding program that makes an LLM into an agent include features such as: engineered prompts, tools, sandboxes, and more harness often interact across multiple surfaces.
+
+most agentic coding tools are code harnesses.
+
+Examples: 
+Claude code
+Aider
+Cursor
+OpenAI Codex
+Continue
+Cline
+Devin 
+Sweep
+Smol Developer
+Open Interpreter
+AutoGPT
+LangChain
+CrewAI
