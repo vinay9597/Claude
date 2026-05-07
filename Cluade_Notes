@@ -1,7 +1,7 @@
-What is Agentic Coding Tool..?
+1. What is Agentic Coding Tool..?
 Agentic Coding Tool that reads your codebase, edits files, runs commands, and integrates with your development tools.
 
-What is Code Harness..?
+2. What is Code Harness..?
 Code Harness is the surrounding program that makes an LLM into an agent include features such as: engineered prompts, tools, sandboxes, and more harness often interact across multiple surfaces.
 
 most agentic coding tools are code harnesses.
@@ -20,3 +20,89 @@ Open Interpreter
 AutoGPT
 LangChain
 CrewAI
+
+3. What is Claude Code..?
+Claude Code is an agentic coding tool. It that reads your codebase, edits files, runs commands, and integrates with your development tools.
+
+http://code.claude.com
+
+its available in your terminal, IDE, desktop app, browser and more....
+
+use cases:
+Automate the work ypu keep putting off
+Build features and fix bugs
+Create commits and pull requests
+connect your tools with MCP
+Customize with instructions, skills, and hooks
+
+Claude Code is CLI Program, and so by it nature it runs in your terminal.
+
+Claude Code is specialised to write code But it can also:
+1. Writing docs
+2. run builds
+3. search files
+4. research topics and more
+
+ Claude Code uses:
+ 1. An Agentic Loop
+ 2. Multiple Models
+ 3. Tool Calls
+
+To Achieve the desired end goal
+
+4. What is Agentic Loop..?
+When you invoke (ask claude code to do something) it uses an agentic loop to perform the requested task.
+
+Your prompt--> Model-->Gather Context-->Take Action-->Verify Results.
+
+While executing the three phases it will perform calls to tools aka tool calls to aid it accomplishing its tasks.
+
+tools are just functions of code that calls to external programs.
+
+You can interrupt the loop at any time to help correct the agent if you think its misguided.
+
+5. Agentic loop - Tool Calls 
+Tools are Code functions that an agent is aware of and can invoke to complete their tasks.
+
+Tools often call out to external program and in turn let the agent interact outside its environment and predefined knowledge.
+
+Your prompt-->Gather Context-->Take Action-->Verify Results-->Done.
+
+Gather Context,Take Action,Verify Results are Tool Calls. 
+
+Gather Context->read_file("tests/test_payment.py")
+
+Take Action->edit_file("src/payment.py", change="fix tax calculation")
+
+Verify Results->run_command("pytest")
+
+Examples of different types of tool calls
+
+Gather Context
+1. File readers
+2. Search APIs
+3. Database queries ( are also called as RAG)
+4. Codebase Scanners
+5. System state queries
+
+Take Action
+1. code editing
+2. Running commands
+3. Writing Files
+4. Calling APIs
+5. Executing scripts
+
+Verify Results
+1. run tests
+2. Compile code
+3. Query output
+4. Inspect logs
+5. Compare results
+
+The Claude Code built-in tools fall into five categories:
+
+1. File Operations read files, edit code, create new files, rename and reorganize.
+2. Search find searches files by pattern, search content with regex, explore codebases.
+3. Execution Run executes shell commands, start servers, run tests, use git.
+4. Web Search searches the web, fetch documentation, look up error messages.
+5. Code intelligence looks at type errors and warnings after edits, jump to definitions,
